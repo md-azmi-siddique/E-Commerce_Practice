@@ -30,6 +30,7 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
+        // route detect
         path: "/shop/:id",
         element: <Shop />
       },
