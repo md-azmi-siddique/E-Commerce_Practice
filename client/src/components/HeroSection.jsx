@@ -1,26 +1,14 @@
-import companyLogo from '../assets/img/logo.png';
-// mport React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-
-// import "./styles.css";
+import Carousel from "./Carousel";
 
 const HeroSection = () => {
     return (
-        <div>
-            {/* <img src={companyLogo} alt=""/> */}
-            <Swiper className="mySwiper">
-       
-        <SwiperSlide><img src={companyLogo} alt=""/></SwiperSlide>
-        <SwiperSlide><img src={companyLogo} alt=""/></SwiperSlide>
-        <SwiperSlide><img src={companyLogo} alt=""/></SwiperSlide>
-        <SwiperSlide><img src={companyLogo} alt=""/></SwiperSlide>
-        <SwiperSlide><img src={companyLogo} alt=""/></SwiperSlide>
-
-      </Swiper>
+        <div className="flex flex-row">
+            <div className="w-3/4">
+                <Carousel />
+            </div>
+            <div className="w-1/4">
+                <Carousel />
+            </div>
         </div>
     );
 };
